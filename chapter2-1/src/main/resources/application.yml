@@ -1,0 +1,12 @@
+
+server:
+  port: 8989
+spring:
+  thymeleaf:
+    # 配置视图路径前缀
+    prefix: classpath:/templates/
+    # 配置视图路径后缀
+    suffix: .html
+    mode: html
+    # 关闭缓存 修改视图 刷新浏览器就显示 开发阶段务必关闭缓存 (=false)
+    cache: false
