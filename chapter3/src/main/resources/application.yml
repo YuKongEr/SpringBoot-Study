@@ -1,0 +1,12 @@
+server:
+  port: 8989
+spring:
+  datasource:
+    username: root
+    password: abc123
+    url: jdbc:mysql://193.112.100.103:3306/test?useUnicode=true&characterEncoding=utf8
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
