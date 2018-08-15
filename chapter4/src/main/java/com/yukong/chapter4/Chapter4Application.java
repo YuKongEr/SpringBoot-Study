@@ -4,7 +4,7 @@ import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@MapperScan("com.yukong.chapter4.repository")
+@MapperScan("com.yukong.chapter5.repository")
 @SpringBootApplication
 public class Chapter4Application {
 

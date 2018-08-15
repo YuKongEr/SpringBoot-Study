@@ -1,14 +1,12 @@
-package com.yukong.chapter4.repository;
+package com.yukong.chapter5.repository;
 
-import com.yukong.chapter4.entity.User;
+import com.yukong.chapter5.entity.User;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
-
-import static org.junit.Assert.*;
 
 /**
  * @Auther: xiongping22369
@@ -25,8 +23,8 @@ public class UserMapperTest {
     @Test
     public void save() {
         User user = new User();
-        user.setUsername("zzzz");
-        user.setPassword("bbbb");
+        user.setUsername("master");
+        user.setPassword("master");
         user.setSex(1);
         user.setAge(18);
         // 返回插入的记录数 ，期望是1条 如果实际不是一条则抛出异常
@@ -44,7 +42,7 @@ public class UserMapperTest {
 
     @Test
     public void selectById() {
-        Assert.assertNotNull(userMapper.selectById(1L));
+        Assert.assertNotNull(userMapper.selectById(3L));
     }
 
     @Test

@@ -1,6 +1,7 @@
 package com.yukong.chapter5.repository;
 
 
+import com.yukong.chapter5.annotation.DataSource;
 import com.yukong.chapter5.entity.User;
 
 import java.util.List;
@@ -38,11 +39,13 @@ public interface UserMapper {
      * @param id
      * @return
      */
+    @DataSource("slave1")
     User selectById(Long id);
 
     /**
      * 查询所有用户信息
      * @return
      */
+    @DataSource("slave2")
     List<User> selectAll();
 }

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yukong.chapter5.repository.UserMapper">
+
+    <resultMap id="SysUserResultMap" type="User">
+        <id property="id" column="id" javaType="java.lang.Long" jdbcType="BIGINT"/>
+        <result property="username" column="USERNAME" javaType="java.lang.String" jdbcType="VARCHAR"/>
+        <result property="password" column="PASSWORD" javaType="java.lang.String" jdbcType="VARCHAR"/>
+        <result property="sex" column="SEX" javaType="java.lang.Integer" jdbcType="INTEGER"/>
+        <result property="age" column="AGE" javaType="java.lang.Integer" jdbcType="INTEGER"/>
+    </resultMap>
+    <delete id="deleteById">
+        delete from user where id=#{id}
+    </delete>
+
+    <select id="selectAll"  resultMap="SysUserResultMap">
+        select * from user
+    </select>
+
+
+    <insert id="save" parameterType="User" >
+        insert into user
+        <trim prefix="(" suffix=")" suffixOverrides="," >
+            <if test="id != null" >
+                id,
+            </if>
+            <if test="username != null" >
+                username,
+            </if>
+            <if test="password != null" >
+                password,
+            </if>
+
+            <if test="sex != null" >
+                sex,
+            </if>
+            <if test="age != null" >
+                age,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides="," >
+            <if test="id != null" >
+                #{id,jdbcType=BIGINT},
+            </if>
+            <if test="username != null" >
+                #{username,jdbcType=VARCHAR},
+            </if>
+            <if test="password != null" >
+                #{password,jdbcType=VARCHAR},
+            </if>
+            <if test="sex != null" >
+                #{sex,jdbcType=INTEGER},
+            </if>
+            <if test="age != null" >
+                #{age,jdbcType=INTEGER},
+            </if>
+        </trim>
+    </insert>
+
+
+    <update id="update" parameterType="User" >
+        update user
+        <set >
+            <if test="username != null" >
+                username = #{username,jdbcType=VARCHAR},
+            </if>
+            <if test="password != null" >
+                password = #{password,jdbcType=VARCHAR},
+            </if>
+            <if test="sex != null" >
+                sex = #{sex,jdbcType=INTEGER},
+            </if>
+            <if test="age != null" >
+                sex = #{age,jdbcType=INTEGER},
+            </if>
+        </set>
+        where id = #{id,jdbcType=BIGINT}
+    </update>
+
+
+    <select id="selectById" resultMap="SysUserResultMap">
+        select
+        *
+        from user
+        where id = #{id,jdbcType=BIGINT}
+    </select>
+</mapper>
