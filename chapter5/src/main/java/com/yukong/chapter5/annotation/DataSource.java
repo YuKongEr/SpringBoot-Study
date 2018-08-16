@@ -9,5 +9,5 @@ import java.lang.annotation.*;
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
 public @interface DataSource {
-    String value() default ""; //该值即key值
+    String value() default "master"; //该值即key值
 }

@@ -7,9 +7,9 @@ import com.yukong.chapter5.entity.User;
 import java.util.List;
 
 /**
- * @Auther: xiongping22369
+ * @Auther: yukong
  * @Date: 2018/8/13 19:47
- * @Description:
+ * @Description: UserMapper接口
  */
 public interface UserMapper {
 
@@ -18,6 +18,7 @@ public interface UserMapper {
      * @param user
      * @return
      */
+    @DataSource  //默认数据源
     int save(User user);
 
     /**
@@ -25,6 +26,7 @@ public interface UserMapper {
      * @param user
      * @return
      */
+    @DataSource  //默认数据源
     int update(User user);
 
     /**
@@ -32,6 +34,7 @@ public interface UserMapper {
      * @param id
      * @return
      */
+    @DataSource  //默认数据源
     int deleteById(Long id);
 
     /**
@@ -39,13 +42,13 @@ public interface UserMapper {
      * @param id
      * @return
      */
-    @DataSource("slave1")
+    @DataSource("slave1")  //slave1
     User selectById(Long id);
 
     /**
      * 查询所有用户信息
      * @return
      */
-    @DataSource("slave2")
+    @DataSource("slave2")  //slave2
     List<User> selectAll();
 }

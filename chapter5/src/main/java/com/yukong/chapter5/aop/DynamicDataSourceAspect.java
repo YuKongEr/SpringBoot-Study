@@ -19,11 +19,11 @@ public class DynamicDataSourceAspect {
     @Before("@annotation(ds)")
     public void changeDataSource(JoinPoint point, DataSource ds) throws Throwable {
         String dsId = ds.value();
-        if (StringUtils.isEmpty(dsId)) {
-           logger.debug("数据源[{}]不存在，使用默认数据源 >{}", dsId, point.getSignature());
-        } else {
+        if (DynamicDataSourceContextHolder.dataSourceIds.contains(dsId)) {
             logger.debug("Use DataSource :{} >", dsId, point.getSignature());
-            DynamicDataSourceContextHolder.setDataSourceRouterKey(ds.value());
+            DynamicDataSourceContextHolder.setDataSourceRouterKey(dsId);
+        } else {
+            logger.info("数据源[{}]不存在，使用默认数据源 >{}", dsId, point.getSignature());
         }
     }
 

@@ -8,8 +8,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
+import java.util.List;
+
 /**
- * @Auther: xiongping22369
+ * @Auther: yukong
  * @Date: 2018/8/14 16:34
  * @Description:
  */
@@ -27,14 +29,13 @@ public class UserMapperTest {
         user.setPassword("master");
         user.setSex(1);
         user.setAge(18);
-        // 返回插入的记录数 ，期望是1条 如果实际不是一条则抛出异常
         Assert.assertEquals(1,userMapper.save(user));
     }
 
     @Test
     public void update() {
         User user = new User();
-        user.setId(1L);
+        user.setId(8L);
         user.setPassword("newpassword");
         // 返回插入的记录数 ，期望是1条 如果实际不是一条则抛出异常
         Assert.assertEquals(1,userMapper.update(user));
@@ -42,7 +43,10 @@ public class UserMapperTest {
 
     @Test
     public void selectById() {
-        Assert.assertNotNull(userMapper.selectById(3L));
+        User user = userMapper.selectById(2L);
+        System.out.println("id:" + user.getId());
+        System.out.println("name:" + user.getUsername());
+        System.out.println("password:" + user.getPassword());
     }
 
     @Test
@@ -50,5 +54,14 @@ public class UserMapperTest {
         Assert.assertEquals(1,userMapper.deleteById(1L));
     }
 
+    @Test
+    public void selectAll() {
+        List<User> users= userMapper.selectAll();
+        users.forEach(user -> {
+            System.out.println("id:" + user.getId());
+            System.out.println("name:" + user.getUsername());
+            System.out.println("password:" + user.getPassword());
+        });
+    }
 
 }
