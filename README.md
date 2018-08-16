@@ -10,6 +10,8 @@
 
 [【SpringBoot系列05】SpringBoot之整合Mybatis](https://www.jianshu.com/p/c44dc639cb93)
 
+[【SpringBoot2.0系列06】SpringBoot之多数据源动态切换数据源](https://www.jianshu.com/p/cac4759b2684)
+
 [简书地址](https://www.jianshu.com/nb/26935871)
 
 [腾讯云+社区地址](https://cloud.tencent.com/developer/column/4803)
