@@ -26,7 +26,7 @@ public interface UserMapper {
      * @param user
      * @return
      */
-    @DataSource  //默认数据源
+    @DataSource("slave1")  //默认数据源
     int update(User user);
 
     /**

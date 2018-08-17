@@ -24,3 +24,10 @@ spring:
 mybatis:
   mapper-locations: classpath:/mybatis/mapper/*.xml
   config-location:  classpath:/mybatis/config/mybatis-config.xml
+
+logging:
+  level:
+    com:
+      yukong:
+        chapter5:
+          repository: debug
