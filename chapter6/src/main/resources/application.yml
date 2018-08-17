@@ -1,0 +1,15 @@
+server:
+  port: 8989
+spring:
+  redis:
+    host: 193.112.100.103
+    port: 6379
+    password: abc123
+    lettuce:
+      pool:
+        # 最大连接数 默认8
+        max-active: 8
+        # 最大空闲连接数 默认8
+        max-idle: 8
+        # 最小空闲连接数 默认0
+        min-idle: 0
