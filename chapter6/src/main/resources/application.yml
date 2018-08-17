@@ -2,9 +2,8 @@ server:
   port: 8989
 spring:
   redis:
-    host: 193.112.100.103
+    host: 127.0.0.1
     port: 6379
-    password: abc123
     lettuce:
       pool:
         # 最大连接数 默认8
