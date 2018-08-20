@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 /**
  * @Auther: yukong
  * @Date: 2018/8/13 13:58
- * @Description: SpringBoot集成jsp
+ * @Description: SpringBoot集成thymeleaf
  */
 @Controller
 public class IndexController {
