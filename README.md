@@ -12,6 +12,9 @@
 
 [【SpringBoot2.0系列06】SpringBoot之多数据源动态切换数据源](https://www.jianshu.com/p/cac4759b2684)
 
+[【SpringBoot2.0系列07】SpringBoot之redis使用（Lettuce版本）](https://www.jianshu.com/p/feef1421ab0b)
+
+[【SpringBoot2.0系列08】SpringBoot之redis数据缓存管理](https://www.jianshu.com/p/6943bb8a9ab8)
 [简书地址](https://www.jianshu.com/nb/26935871)
 
 [腾讯云+社区地址](https://cloud.tencent.com/developer/column/4803)
