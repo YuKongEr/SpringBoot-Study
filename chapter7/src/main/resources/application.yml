@@ -1,0 +1,26 @@
+server:
+  port: 8989
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://193.112.100.103:3306/test?useUnicode=true&characterEncoding=utf8
+    username: root
+    password: abc123
+  redis:
+    host: 193.112.100.103
+    password: abc123
+    port: 6379
+    lettuce:
+      pool:
+        max-idle: 8
+        min-idle: 0
+        max-active: 8
+mybatis:
+  config-location: classpath:/mybatis/config/mybatis-config.xml
+  mapper-locations: classpath:/mybatis/mapper/*.xml
+logging:
+  level:
+    com:
+      yukong:
+        chapter7:
+          repository: debug
