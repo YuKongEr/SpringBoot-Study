@@ -15,6 +15,9 @@
 [【SpringBoot2.0系列07】SpringBoot之redis使用（Lettuce版本）](https://www.jianshu.com/p/feef1421ab0b)
 
 [【SpringBoot2.0系列08】SpringBoot之redis数据缓存管理](https://www.jianshu.com/p/6943bb8a9ab8)
+
+[【SpringBoot2.0系列09】SpringBoot之rabbitmq使用](https://www.jianshu.com/p/0d400d30936b)
+
 [简书地址](https://www.jianshu.com/nb/26935871)
 
 [腾讯云+社区地址](https://cloud.tencent.com/developer/column/4803)

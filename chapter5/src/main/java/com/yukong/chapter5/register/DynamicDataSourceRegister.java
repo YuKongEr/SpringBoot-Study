@@ -179,4 +179,5 @@ public class DynamicDataSourceRegister implements ImportBeanDefinitionRegistrar,
         // 绑定配置器
         binder = Binder.get(evn);
     }
+
 }

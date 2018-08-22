@@ -1,0 +1,8 @@
+# rabbitmq配置
+spring:
+    rabbitmq:
+      addresses: 127.0.0.1
+      username: guest
+      password: guest
+      publisher-confirms: true # 消息发送确认机智，防止消息丢失
+      virtual-host:
