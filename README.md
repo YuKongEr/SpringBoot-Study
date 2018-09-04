@@ -19,6 +19,10 @@
 [【SpringBoot2.0系列09】SpringBoot之rabbitmq使用](https://www.jianshu.com/p/0d400d30936b)
 
 [【SpringBoot2.0系列10】SpringBoot之@Scheduled任务调度](https://www.jianshu.com/p/94cc87cf8f18)
+
+[【SpringBoot2.0系列11】SpringBoot之@Elasticsearch完成CURD](https://www.jianshu.com/p/3ec38433d9ad)
+
+
 [简书地址](https://www.jianshu.com/nb/26935871)
 
 [腾讯云+社区地址](https://cloud.tencent.com/developer/column/4803)
