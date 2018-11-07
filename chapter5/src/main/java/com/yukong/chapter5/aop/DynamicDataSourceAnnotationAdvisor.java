@@ -45,8 +45,11 @@ public class DynamicDataSourceAnnotationAdvisor extends AbstractPointcutAdvisor 
 
     private Pointcut buildPointcut() {
         Pointcut cpc = (Pointcut) new AnnotationMatchingPointcut(DataSource.class, true);
+        // 类注解
+        Pointcut clpc = (Pointcut) AnnotationMatchingPointcut.forClassAnnotation(DataSource.class);
+        // 方法注解
         Pointcut mpc = (Pointcut) AnnotationMatchingPointcut.forMethodAnnotation(DataSource.class);
-        return new ComposablePointcut(cpc).union(mpc);
+        return new ComposablePointcut(cpc).union(clpc).union(mpc);
     }
 
 }

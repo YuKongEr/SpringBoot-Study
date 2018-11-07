@@ -132,7 +132,8 @@ public class DynamicDataSourceRegister implements ImportBeanDefinitionRegistrar,
             }
             return type;
         } catch (Exception e) {
-            throw new IllegalArgumentException("can not resolve class with type: " + typeStr); //无法通过反射获取class对象的情况则抛出异常，该情况一般是写错了，所以此次抛出一个runtimeexception
+            //无法通过反射获取class对象的情况则抛出异常，该情况一般是写错了，所以此次抛出一个runtimeexception
+            throw new IllegalArgumentException("can not resolve class with type: " + typeStr);
         }
     }
 

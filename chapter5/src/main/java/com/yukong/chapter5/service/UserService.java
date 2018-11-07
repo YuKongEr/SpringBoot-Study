@@ -16,6 +16,7 @@ public class UserService {
 
     @Autowired
     private UserMapper userMapper;
+
     public void testTransactional() {
         User user = new User();
         user.setUsername("Transactional");

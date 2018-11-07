@@ -11,6 +11,7 @@ import java.util.List;
  * @Date: 2018/8/13 19:47
  * @Description: UserMapper接口
  */
+@DataSource("slave1")
 public interface UserMapper {
 
     /**
@@ -49,6 +50,5 @@ public interface UserMapper {
      * 查询所有用户信息
      * @return
      */
-    @DataSource("slave2")  //slave2
     List<User> selectAll();
 }
