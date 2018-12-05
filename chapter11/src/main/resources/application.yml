@@ -1,0 +1,23 @@
+spring:
+  mail:
+    host: smtp.qq.com
+    username: 541130126@qq.com
+    password: xxx
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+  freemarker:
+    charset: UTF-8
+    allow-request-override: false
+    cache: false
+    expose-request-attributes: false
+    expose-session-attributes: false
+    content-type: text/html
+    template-loader-path: classpath:/static/template/
+    expose-spring-macro-helpers: false
+    check-template-location: true
+    enabled: true
