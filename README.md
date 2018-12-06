@@ -22,6 +22,8 @@
 
 [【SpringBoot2.0系列11】SpringBoot之@Elasticsearch完成CURD](https://www.jianshu.com/p/3ec38433d9ad)
 
+[【SpringBoot2.0系列12】SpringBoot之JavaMail发送，支持FreeMark模板渲染](https://www.jianshu.com/p/179358c2b1ae)
+
 
 [简书地址](https://www.jianshu.com/nb/26935871)
 
