@@ -25,6 +25,9 @@
 [【SpringBoot2.0系列12】SpringBoot之JavaMail发送，支持FreeMark模板渲染](https://www.jianshu.com/p/179358c2b1ae)
 
 
+[【SpringSecurity系列01】初识SpringSecurity](http://www.yukonga.cn/2019/04/11/%E3%80%90SpringSecurity%E7%B3%BB%E5%88%9701%E3%80%91%E5%88%9D%E8%AF%86SpringSecurity/)
+
+
 [简书地址](https://www.jianshu.com/nb/26935871)
 
 [腾讯云+社区地址](https://cloud.tencent.com/developer/column/4803)
