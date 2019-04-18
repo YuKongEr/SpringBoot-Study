@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="ctx" />
+    <title>panda </title>
+    <meta name="keywords" content="panda管理系统">
+    <meta name="description" content="panda管理系统">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/font-awesome.css?v=4.4.0" rel="stylesheet">
+    <link href="/css/animate.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/login.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <meta http-equiv="refresh" content="0;ie.html"/>
+    <![endif]-->
+    <script>
+        if (window.top !== window.self) {
+            window.top.location = window.location;
+        }
+    </script>
+
+</head>
+
+<body class="signin">
+<div class="signinpanel">
+    <div class="row">
+        <div class="col-sm-7">
+            <div class="signin-info">
+                <div class="logopanel m-b">
+                    <h1>panda</h1>
+                </div>
+                <div class="m-b"></div>
+                <h3>
+                    欢迎使用 <strong>panda管理系统</strong>
+                </h3>
+                <ul class="m-b">
+                    <li><i class="fa fa-arrow-circle-o-right m-r-xs"></i>
+                        更快
+                    </li>
+                    <li><i class="fa fa-arrow-circle-o-right m-r-xs"></i> 更便捷</li>
+                    <li><i class="fa fa-arrow-circle-o-right m-r-xs"></i> 更高效、更懂你</li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="col-sm-5">
+            <form id="signupForm" action="/authentication/form" method="post">
+                <h3 class="text-center">用户登录</h3>
+                <p class="m-t-md text-center">欢迎登录panda后台管理系统</p>
+                <input type="text" name="username" class="form-control uname"
+                       value="admin"/>
+                <input type="password" name="password"
+                       class="form-control pword m-b" value="111111"/>
+                <button class="btn btn-login btn-block" type="submit">登录</button>
+                <!--按钮模块-->
+                <div class="outside-login">
+                    <div class="outside-login-tit">
+                        <span>第三方登录</span>
+                    </div>
+                    <div class="outside-login-cot">
+                        <a class="outside-login-btn wxoa actived J-btnSwitchLoginType" target="_Blank"
+                           href="javascript:void(0)" onclick="login4qq()">
+                            <em><img alt="QQ" src="/img/login_qq.png" height="32" width="32"></i></em>
+                        </a>
+                        <a class="outside-login-btn wxoa actived J-btnSwitchLoginType" target="_Blank"
+                           href="javascript:void(0)" onclick="login4wechat()">
+                            <em><img alt="微信" src="/img/login_wechat.png" height="32" width="32"></i></em>
+                        </a>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <div class="signup-footer">
+        <div class="pull-left">&copy; 2018 All Rights Reserved. panda
+        </div>
+    </div>
+</div>
+<!-- 全局js -->
+<script src="/js/jquery.min.js?v=2.1.4" ></script>
+<script src="/js/bootstrap.min.js?v=3.3.6"></script>
+
+<!-- 自定义js -->
+<script src="/js/content.js?v=1.0.0" ></script>
+
+<!-- jQuery Validation plugin javascript-->
+
+</body>
+
+
+</html>
