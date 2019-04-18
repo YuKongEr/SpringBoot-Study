@@ -28,6 +28,8 @@
 
 [【SpringSecurity系列01】初识SpringSecurity](http://www.yukonga.cn/2019/04/11/%E3%80%90SpringSecurity%E7%B3%BB%E5%88%9701%E3%80%91%E5%88%9D%E8%AF%86SpringSecurity/)
 
+[【SpringSecurity系列02】SpringSecurity认证流程源码分析](https://www.yukonga.cn/2019/04/12/SpringSecurity%E7%B3%BB%E5%88%9702%E3%80%91SpringSecurity%20UsernamePasswordAuthenticationFilter%E8%AE%A4%E8%AF%81%E9%80%BB%E8%BE%91%E6%BA%90%E7%A0%81%E8%A7%A3%E8%AF%BB/)
+
 
 [简书地址](https://www.jianshu.com/nb/26935871)
 
